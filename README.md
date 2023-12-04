@@ -67,7 +67,7 @@ I used a lot of git commands like :
 ## Credits
 
 Apart from me :D the credit also goes to my Instructor, TAs, Tutor, Classmates, and 
-- Google (my guide everytime I got stuck and lost!)
+- Google (my best buddy!)
 - Geeks for Geeks
 - Stack Overflow
 - MDN web doc
@@ -85,5 +85,5 @@ To test the homework,
   - Y
   - Y
   - I
-  
+
 ### Done By: Tasneem Halim
