@@ -8,35 +8,31 @@
 const apiRouter = require('express').Router();
 const { v4: uuidv4 } = require('uuid');
 const fs = require("fs");
-const {
-  readFromFile,
-  readAndAppend,
-  writeToFile,
-} = require('../helpers/fsUtils');
+//const {
+//  readFromFile,
+//  readAndAppend,
+//  writeToFile,
+//} = require('../helpers/fsUtils'); --- not worked
 
-// GET Route for retrieving all the tips
-appRouter.get('/notes', (req, res) => {
-  readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
+// GET Route for retrieving all the notes
+apiRouter.get('/api/notes', async (req, res) => {
+  const dbJson = await JSON.parse(fs.readFileSync("db.db.json", "utf8"));
+  res.json(dbJson);
 });
 
-// POST Route for a new UX/UI tip
-appRouter.post('/notes', (req, res) => {
+// POST request to this route
+apiRouter.post('api/notes', (req, res) => {
   console.log(req.body);
+  const dbJson = JSON.parse(fs.readFileSync("db.db.json", "utf8"));
+  const newNote = {
+    title: req.body.title,
+    text: req.body.text,
+    nid: uuidv4(),
+  };
 
-  const { title, text } = req.body;
-
-  if (req.body) {
-    const newNote = {
-      title,
-      text,
-      id: uuid,
-    }
-
-    readAndAppend(newNote, './db/db.json');
-    res.json(`Note added successfully`);
-  } else {
-    res.error('Error in adding Note');
-  }
+  dbJson.push(newNote);
+  fs.writeFileSync("db/db.json", JSON.stringify(dbJson));
+  res.json(dbJson);
 });
 
-module.exports = appRouter;
+module.exports = apiRouter;
