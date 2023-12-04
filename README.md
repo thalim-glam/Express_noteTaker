@@ -67,7 +67,7 @@ I used a lot of git commands like :
 ## Credits
 
 Apart from me :D the credit also goes to my Instructor, TAs, Tutor, Classmates, and 
-- Google (my best buddy!)
+- Google (my best buddy)
 - Geeks for Geeks
 - Stack Overflow
 - MDN web doc
