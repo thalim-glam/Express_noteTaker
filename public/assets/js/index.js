@@ -4,16 +4,16 @@ let noteText;
 let saveNoteBtn;
 let newNoteBtn;
 let noteList;
-
 if (window.location.pathname === '/notes') {
   noteForm = document.querySelector('.note-form');
   noteTitle = document.querySelector('.note-title');
   noteText = document.querySelector('.note-textarea');
-  saveNoteBtn = document.querySelector('.save-note');
-  newNoteBtn = document.querySelector('.new-note');
-  clearBtn = document.querySelector('.clear-btn');
+  saveNoteBtn = document.querySelector('#save-note');
+  newNoteBtn = document.querySelector('#new-note');
+  clearBtn = document.querySelector('#clear-btn');
   noteList = document.querySelectorAll('.list-container .list-group');
 }
+console.log(window.location.pathname);
 
 // Show an element
 const show = (elem) => {
