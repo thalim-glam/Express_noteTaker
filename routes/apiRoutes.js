@@ -5,9 +5,8 @@
 // Build POST (create) route to create a new note - done
 // export the routes - done
 
-const apiRouter = require('express').Router();
+const appRouter = require('express').Router();
 const { v4: uuidv4 } = require('uuid');
-const fs = require("fs");
 const {
   readFromFile,
   readAndAppend,
@@ -29,7 +28,7 @@ appRouter.post('/notes', (req, res) => {
     const newNote = {
       title,
       text,
-      id: uuid,
+      id: uuidv4(),
     }
 
     readAndAppend(newNote, './db/db.json');

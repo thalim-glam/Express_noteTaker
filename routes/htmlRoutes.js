@@ -16,3 +16,4 @@ router.get('/notes', (req, res) => {
 
 // Export the routes
 module.exports = router;
+
