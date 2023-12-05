@@ -7,10 +7,11 @@
   - [Installation](#installation)
   - [Required Task](#required-task)
   - [User Instruction](#user-instruction)
-  - [Command line code](#usage)
+  - [Command line code](#command-line-code)
   - [Credits](#credits)
   - [License](#license)
   - [Tests](#tests)
+  - [Deploying to Heroku](#deploying-to-heroku)
 
 ## Installation
 
@@ -97,5 +98,19 @@ To test this application please type,
   - Open web browser and type http://localhost:3001
   - You can also use Innsomnia to test the application
   - Click here for deployed Heroku link : https://ucbth-ch11-d97ba2745641.herokuapp.com/
+
+## Deploying to Heroku
+- This is suggested in the Heroku website.
+- Therefore using it for testing purpose.
+- Please feel free to click the button below :D
+
+```
+$ heroku create
+$ git push heroku main
+$ heroku open
+```
+or
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ### Done By: Tasneem Halim
