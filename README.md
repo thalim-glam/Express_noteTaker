@@ -51,7 +51,7 @@
 
   [1] Click here for the repository: https://github.com/thalim-glam/Express_noteTaker 
   [2] Click here for Readme file: https://thalim-glam.github.io/Express_noteTaker/
-  [3] Click here for the deployed link : 
+  [3] Click here for the Heroku-deployed link : https://ucbth-ch11-d97ba2745641.herokuapp.com/ 
   [4] When the Note Taker page loads, click on the "Get started".
   [5] Enter text into the "Title" and "Text" fields and click "Save Note".
   [6] To access previous notes, click on the saved notes on the left.
@@ -96,6 +96,6 @@ To test this application please type,
   - npm run start [ To start the server ]
   - Open web browser and type http://localhost:3001
   - You can also use Innsomnia to test the application
-  - Click here for deployed Heroku link : 
+  - Click here for deployed Heroku link : https://ucbth-ch11-d97ba2745641.herokuapp.com/
 
 ### Done By: Tasneem Halim
