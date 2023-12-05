@@ -5,8 +5,8 @@
 
 ## Table of Contents
   - [Installation](#installation)
-  - [Task](#task)
-  - [Usage](#usage)
+  - [Required Task](#required-task)
+  - [User Instruction](#user-instruction)
   - [Command line code](#usage)
   - [Credits](#credits)
   - [License](#license)
@@ -14,9 +14,13 @@
 
 ## Installation
 
-To run the application successfully, we need Microsoft Visual Studio as an editor, Git Bash to clone the github repo and Chrome Dev Tools to inspect the code.
+- Here are the installation process :
+  [1] Click on the link of the repo for this app.
+  [2] Clone the repository or download the zip folder.
+  [3] Open the source code in your code editor.
+  [4] Open the integrated terminal or git bash to test the application.
 
-## Task 
+## Required Task 
 
 - The frontend is included in the starter code
 - Student HW is to build the back end, connect the two, and then deploy the entire application to Heroku.
@@ -43,24 +47,32 @@ To run the application successfully, we need Microsoft Visual Studio as an edito
   THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappears
 ```
 
-## Usage
+## User Instruction
 
-To see my homework, please go to : https://thalim-glam.github.io/MCQ-Quiz/
+  [1] Click here for the repository: https://github.com/thalim-glam/Express_noteTaker 
+  [2] Click here for Readme file: https://thalim-glam.github.io/Express_noteTaker/
+  [3] Click here for the deployed link : 
+  [4] When the Note Taker page loads, click on the "Get started".
+  [5] Enter text into the "Title" and "Text" fields and click "Save Note".
+  [6] To access previous notes, click on the saved notes on the left.
+  [7] To clear form click the "Clear Form" button.
+  [8] Here is a sample screenshots of my application : 
 
-Here is a sample screenshot showing partial view og my project
 ![Screenshot of Code Quiz Generator](./assets/images/Screenshot_1.png)
 ![Screenshot of Sample of Quiz Questions](./assets/images/Screenshot_2.png)
 ![Screenshot of Final Scores of different users](./assets/images/Screenshot_3.png)
 
 ## Command line code
 
-I used a lot of git commands like :
+I used the following command lines:
+- npm run start [ You may need this to start the server ]
+- npm i express [To install modules if you do ot see it ]
 - git status
 - git add -A
 - git commit -m "Comment goes here"
 - git branch
-- git push
 - git pull origin main
+- git push
 - git checkout main
 - git checkout -b feature/add-branch
 
@@ -71,7 +83,7 @@ Apart from me :D the credit also goes to my Instructor, TAs, Tutor, Classmates, 
 - Geeks for Geeks
 - Stack Overflow
 - MDN web doc
-- Github docs
+- Class Recordings
 - Tutorials Teacher
 
 ## License
@@ -79,11 +91,11 @@ Apart from me :D the credit also goes to my Instructor, TAs, Tutor, Classmates, 
 
 ## Tests
 
-To test the homework, 
-  - P
-  - C
-  - Y
-  - Y
-  - I
+To test this application please type, 
+  - npm i express [To install modules if you do ot see it ]
+  - npm run start [ To start the server ]
+  - Open web browser and type http://localhost:3001
+  - You can also use Innsomnia to test the application
+  - Click here for deployed Heroku link : 
 
 ### Done By: Tasneem Halim

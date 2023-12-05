@@ -6,11 +6,11 @@
 // export the routes - done
 
 const appRouter = require('express').Router();
+//const uuid = require('../helpers/fsUtils.js');
 const { v4: uuidv4 } = require('uuid');
 const {
   readFromFile,
   readAndAppend,
-  writeToFile,
 } = require('../helpers/fsUtils');
 
 // GET Route for retrieving all the tips
@@ -22,7 +22,7 @@ appRouter.get('/notes', (req, res) => {
 appRouter.post('/notes', (req, res) => {
   console.log(req.body);
 
-  const { title, text } = req.body;
+  const { title, text, id } = req.body;
 
   if (req.body) {
     const newNote = {
@@ -37,5 +37,18 @@ appRouter.post('/notes', (req, res) => {
     res.error('Error in adding Note');
   }
 });
+
+//---------------------------------- DELETE FUNCTION-----------------------------------------
+appRouter.delete('/notes/:id', async (req, res) => {
+  let data = fs.readFileSync("./db/db.json", "utf8");
+  const dataJSON =  JSON.parse(data);
+  const newNotes = dataJSON.filter((note) => { 
+    return note.id !== req.params.id;
+  });
+  fs.writeFileSync("db/db.json",JSON.stringify(newNotes));
+  res.json("Note deleted.");
+});
+
+//--------------------------------------BONUS--------------------------------------------
 
 module.exports = appRouter;
