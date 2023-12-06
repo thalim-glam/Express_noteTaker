@@ -23,10 +23,10 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('*', (req,res) => {
-  res.sendFile(path.join(__dirname,'public/404.html'))
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/404.html'))
 });
 
 app.listen(PORT, () => {
-  console.log(`APP OR SERVER WILL BE LIVE AT:  http://localhost:${PORT}`);
+  console.log(`Your server is running here. Please follow this link:  http://localhost:${PORT}`);
 });
