@@ -16,10 +16,11 @@
 ## Installation
 
 - Here are the installation process :
-  [1] Click on the link of the repo for this app.
+  [1] Here is the repo for this application https://github.com/thalim-glam/Express_noteTaker 
   [2] Clone the repository or download the zip folder.
   [3] Open the source code in your code editor.
   [4] Open the integrated terminal or git bash to test the application.
+  [5] Please refer to [Tests](#tests) section for further information regarding testing.
 
 ## Required Task 
 
@@ -93,16 +94,17 @@ Apart from me :D the credit also goes to my Instructor, TAs, Tutor, Classmates, 
 ## Tests
 
 To test this application please type, 
-  - npm i express [To install modules if you do ot see it ]
+  - npm i [To install node modules ]
+  - npm i express [To install express ]
   - npm run start [ To start the server ]
   - Open web browser and type http://localhost:3001
-  - You can also use Innsomnia to test the application
+  - You can also use Innsomnia/postman to test the application
   - Click here for deployed Heroku link : https://ucbth-ch11-d97ba2745641.herokuapp.com/
 
 ## Deploying to Heroku
-- This is suggested in the Heroku website.
-- Therefore using it for testing purpose.
-- Please feel free to click the button below :D
+:) This is suggested in the Heroku website.
+:) Therefore using it for testing purpose.
+:) Please feel free to click the button below 
 
 ```
 $ heroku create
@@ -113,4 +115,4 @@ or
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-### Done By: Tasneem Halim
+### Done By: Tasneem Halim 😎

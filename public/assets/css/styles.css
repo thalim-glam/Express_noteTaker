@@ -26,14 +26,15 @@ body {
 
 .note-textarea {
   resize: none;
-  height: calc(100% - 10px);
-  padding-top: 15px;
+  height: calc(100% - 50px);
+  padding-top: 30px;
 }
 
 .note-title {
-  height: 50px;
-  margin-top: 13px;
+  height: 80px;
+  margin-top: 20px;
   font-size: 3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .note-title:read-only,
