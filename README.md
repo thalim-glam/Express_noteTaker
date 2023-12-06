@@ -60,7 +60,6 @@
   - To clear form click the "Clear Form" button.
   - Here is a sample screenshots of my application :
     - Walkthrough Video link: https://drive.google.com/file/d/1nA77FflJy1JEgvdCwOdFIknbdtt6UufC/view
-    - Walkthrough Video ![Video](./public/images/Express_NoteTaker_Walkthrough_vid.mp4)
     - Initial Page ![Screenshot of Initial Page](./public/images/initial_page.png)
     - Existing notes ![Screenshot of Showing existing notes](./public/images/showing_exiting_note.png)
     - Saving New note ![Screenshot of Saving new note](./public/images/saving_new_note.png)
