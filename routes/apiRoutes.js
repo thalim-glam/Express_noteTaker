@@ -1,24 +1,20 @@
-// Routes for GET notes and POST (create) notes
-// Refer to the mini project (copy the helpers folder. this should contain fsUtils.js) - done
-// Refer to tips.js routes and copy the GET, POST route - done
-// Build GET all route to get all notes - done
-// Build POST (create) route to create a new note - done
-// export the routes - done
-
-const appRouter = require('express').Router();
 //const uuid = require('../helpers/fsUtils.js');
+
+const fs = require('fs');
+const appRouter = require('express').Router();
 const { v4: uuidv4 } = require('uuid');
 const {
   readFromFile,
   readAndAppend,
 } = require('../helpers/fsUtils');
+const { text } = require('express');
 
-// GET Route for retrieving all the tips
+// GET
 appRouter.get('/notes', (req, res) => {
   readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
-// POST Route for a new UX/UI tip
+// Post
 appRouter.post('/notes', (req, res) => {
   console.log(req.body);
 
@@ -39,14 +35,19 @@ appRouter.post('/notes', (req, res) => {
 });
 
 //---------------------------------- DELETE FUNCTION-----------------------------------------
-appRouter.delete('/notes/:id', async (req, res) => {
-  let data = fs.readFileSync("./db/db.json", "utf8");
+appRouter.delete('/notes/:id', (req, res) => {
+  var data = fs.readFileSync("./db/db.json", "utf8");
   const dataJSON =  JSON.parse(data);
   const newNotes = dataJSON.filter((note) => { 
     return note.id !== req.params.id;
   });
-  fs.writeFileSync("db/db.json",JSON.stringify(newNotes));
-  res.json("Note deleted.");
+
+  fs.writeFile("db/db.json",JSON.stringify(newNotes), (err,text) => {
+    if(err)
+    {console.error(err);
+    return;}
+  });
+  res.json(newNotes);
 });
 
 //--------------------------------------BONUS--------------------------------------------
