@@ -1,4 +1,4 @@
-//const uuid = require('../helpers/fsUtils.js');
+//const uuid = require('../helpers/fsUtils.js'); Not helpful
 
 const fs = require('fs');
 const appRouter = require('express').Router();
@@ -7,14 +7,17 @@ const {
   readFromFile,
   readAndAppend,
 } = require('../helpers/fsUtils');
+
 const { text } = require('express');
 
-// GET
+//----------------------------------------------- GET ------------------------------------------------
+
 appRouter.get('/notes', (req, res) => {
   readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
-// Post
+//----------------------------------------------- POST ------------------------------------------------
+
 appRouter.post('/notes', (req, res) => {
   console.log(req.body);
 
@@ -26,30 +29,32 @@ appRouter.post('/notes', (req, res) => {
       text,
       id: uuidv4(),
     }
-
+    console.log("Note added successfully")
     readAndAppend(newNote, './db/db.json');
     res.json(`Note added successfully`);
+    console.log("Note added successfully")
   } else {
     res.error('Error in adding Note');
   }
 });
 
-//---------------------------------- DELETE FUNCTION-----------------------------------------
+//--------------------------------------------- DELETE FUNCTION-----------------------------------------
 appRouter.delete('/notes/:id', (req, res) => {
   var data = fs.readFileSync("./db/db.json", "utf8");
-  const dataJSON =  JSON.parse(data);
-  const newNotes = dataJSON.filter((note) => { 
+  const dataJSON = JSON.parse(data);
+  const newNotes = dataJSON.filter((note) => {
     return note.id !== req.params.id;
   });
 
-  fs.writeFile("db/db.json",JSON.stringify(newNotes), (err,text) => {
-    if(err)
-    {console.error(err);
-    return;}
+  fs.writeFile("db/db.json", JSON.stringify(newNotes), (err, text) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
   });
   res.json(newNotes);
+  console.log(" BONUS : Note deleted successfully")
 });
-
-//--------------------------------------BONUS--------------------------------------------
+//-------------------------------------------THIS IS THE BONUS PART-------------------------------------
 
 module.exports = appRouter;
