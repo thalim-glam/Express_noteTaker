@@ -16,11 +16,11 @@
 ## Installation
 
 - Here are the installation process :
-  [1] Here is the repo for this application https://github.com/thalim-glam/Express_noteTaker 
-  [2] Clone the repository or download the zip folder.
-  [3] Open the source code in your code editor.
-  [4] Open the integrated terminal or git bash to test the application.
-  [5] Please refer to [Tests](#tests) section for further information regarding testing.
+  - [1] Here is the repo for this application https://github.com/thalim-glam/Express_noteTaker 
+  - [2] Clone the repository or download the zip folder.
+  - [3] Open the source code in your code editor.
+  - [4] Open the integrated terminal or git bash to test the application.
+  - [5] Please refer to [Tests](#tests) section for further information regarding testing.
 
 ## Required Task 
 
