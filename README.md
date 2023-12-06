@@ -60,9 +60,10 @@
   - To clear form click the "Clear Form" button.
   - Here is a sample screenshots of my application : 
 
-![Screenshot of Code Quiz Generator](./assets/images/Screenshot_1.png)
-![Screenshot of Sample of Quiz Questions](./assets/images/Screenshot_2.png)
-![Screenshot of Final Scores of different users](./assets/images/Screenshot_3.png)
+![Screenshot of Initial Page](./public/images/initial_page.png)
+![Screenshot of Showing existing notes](./public/images/showing_exiting_note.png)
+![Screenshot of Saving new note](./public/images/saving_new_note.png)
+![Screenshot of Deleting previously saved note](./public/images/deleted_note.png)
 
 ## Command line code
 
