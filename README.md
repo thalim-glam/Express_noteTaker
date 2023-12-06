@@ -58,12 +58,11 @@
   - Enter text into the "Title" and "Text" fields and click "Save Note".
   - To access previous notes, click on the saved notes on the left.
   - To clear form click the "Clear Form" button.
-  - Here is a sample screenshots of my application : 
-
-![Screenshot of Initial Page](./public/images/initial_page.png)
-![Screenshot of Showing existing notes](./public/images/showing_exiting_note.png)
-![Screenshot of Saving new note](./public/images/saving_new_note.png)
-![Screenshot of Deleting previously saved note](./public/images/deleted_note.png)
+  - Here is a sample screenshots of my application :
+    - Initial Page ![Screenshot of Initial Page](./public/images/initial_page.png)
+    - Existing notes ![Screenshot of Showing existing notes](./public/images/showing_exiting_note.png)
+    - Saving New note ![Screenshot of Saving new note](./public/images/saving_new_note.png)
+    - Deleting Note (BONUS) ![Screenshot of Deleting previously saved note](./public/images/deleted_note.png)
 
 ## Command line code
 
