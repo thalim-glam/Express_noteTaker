@@ -117,3 +117,4 @@ or
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ### Done By: Tasneem Halim 😎
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fthalim-glam%2FExpress_noteTaker&label=Visitor%20Today&countColor=%23263759&style=flat&labelStyle=upper)
